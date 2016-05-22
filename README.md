@@ -2,8 +2,7 @@
 A shell script that sends mail when any file exceeds a size limit set by the user
 check the ssmtp settings file it is configured for gmail "yourhostname" will be set automatically when you install ssmtp
 
-    Install ssmtp [Absolute README link](http://apt.ubuntu.com/p/ssmtp:)
-    [I'm an inline-style link](https://www.google.com)
+    Install ssmtp http://apt.ubuntu.com/p/ssmtp:
     sudo apt-get install ssmtp
 
     Edit the ssmtp config file:
