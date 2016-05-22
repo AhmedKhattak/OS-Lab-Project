@@ -1,6 +1,7 @@
 # OS-Lab-Project
 A shell script that sends mail when any file exceeds a size limit set by the user
 check the ssmtp settings file it is configured for gmail "yourhostname" will be set automatically when you install ssmtp
+Disable 2-step verification in your google account and enable less secure apps this is required https://www.google.com/settings/security/lesssecureapps
 
     Install ssmtp http://apt.ubuntu.com/p/ssmtp:
     sudo apt-get install ssmtp
