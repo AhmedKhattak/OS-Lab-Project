@@ -10,11 +10,11 @@ FILES=$(find . -maxdepth 1  -size +102400000c -printf 'File : %p  Size: %s\n'|so
 # email subject
 SUBJECT="File Size Exceeded"
 # Email To ?
-EMAIL="khattak.ahmed@yahoo.com" #the mail used here must be same as the one  used in the ssmtp line
+EMAIL="yourmail@somemail.com" #the mail used here must be same as the one  used in the ssmtp line
 # Email text/message
 EMAILMESSAGE="/tmp/emailmessage.txt" # create file in temp directory
-echo "To: ahmedmassod007@gmail.com
-From: bahria.test016@gmail.com
+echo "To: recpientmail@somemail.com
+From: yourmail@somemail.com"
 Subject: Sent from a terminal!
 
 $FILES has exceeded its size limit please deal with it.
@@ -23,5 +23,5 @@ echo "End Transmission" >>$EMAILMESSAGE
 echo "Sending..."
 echo "\n\n" >>$EMAILMESSAGE #need new line to simulatectrl-d as it is required to send the mail from ssmtp
 #this mail here notice the ssmtp and the one in the message is same
-ssmtp "ahmedmassod007@gmail.com"  < $EMAILMESSAGE #send input to ssmtp to send email
+ssmtp "recpientmail@somemail.com"  < $EMAILMESSAGE #send input to ssmtp to send email
 echo "Done." 
