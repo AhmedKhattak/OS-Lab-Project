@@ -21,7 +21,7 @@ $FILES has exceeded its size limit please deal with it.
 "> $EMAILMESSAGE
 echo "End Transmission" >>$EMAILMESSAGE
 echo "Sending..."
-echo "\n\n" >>$EMAILMESSAGE #need new line to simulatectrl-d as it is required to send the mail from ssmtp
+echo "\n\n" >>$EMAILMESSAGE #need new line to simulate ctrl-d as it is required to send the mail from ssmtp
 #this mail here notice the ssmtp and the one in the message is same
 ssmtp "recpientmail@somemail.com"  < $EMAILMESSAGE #send input to ssmtp to send email
 echo "Done." 
