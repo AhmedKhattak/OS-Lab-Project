@@ -10,10 +10,11 @@ FILES=$(find . -maxdepth 1  -size +102400000c -printf 'File : %p  Size: %s\n'|so
 # email subject
 SUBJECT="File Size Exceeded"
 # Email To ?
-EMAIL="yourmail@somemail.com" #the mail used here must be same as the one  used in the ssmtp line
+EMAIL="yourmail@somemail.com" 
 # Email text/message
 EMAILMESSAGE="/tmp/emailmessage.txt" # create file in temp directory
-echo "To: recpientmail@somemail.com
+#the mail used below the To part must be same as the one  used in the ssmtp line
+echo "To: recpientmail@somemail.com 
 From: yourmail@somemail.com"
 Subject: Sent from a terminal!
 
